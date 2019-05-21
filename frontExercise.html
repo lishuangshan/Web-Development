@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birthday</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form>
+	<div>
+		<label>
+			First Name:
+			<input type="text" name="fname" required placeholder="firstname">
+		</label>
+
+		<label>
+			Last Name:
+			<input type="text" name="lname" required placeholder="lastname">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			Male:
+			<input type="radio" name="gender" value="male">
+		</label>		
+		<label>
+			Female:
+			<input type="radio" name="gender" value="female">
+		</label>		
+		<label>
+			Other:
+			<input type="radio" name="gender" value="other">
+		</label>
+	</div>
+
+	<div>
+		<label>
+			Email:
+			<input type="email" name="email" required>
+		</label>
+		<label>
+			Password:
+			<input type="Password" name="password" pattern=".{5,10}" required title="4 to 6 chacs">
+		</label>
+	</div>
+
+<!-- TA points out that the ordinary way or Colt's way would not pass certain validation rule so it needs to be done with a filedset tag -->
+	<fieldset>
+	  <legend>Birthday:</legend>
+	  <label for="month">Month:</label>
+	  <select name="month" id="month">
+	    <option value="january">Jan</option>
+	    <option value="february">Feb</option>
+	    <option value="march">Mar</option>
+	    <option value="april">Apr</option>
+	  </select>
+	  
+	  <label for="day">Day</label>
+	  <select name="day" id="day">
+	    <option value="1">1</option>
+	    <option value="2">2</option>
+	    <option value="3">3</option>
+	    <option value="4">4</option>
+	  </select>
+	  <label for="year">Year</label>
+	  <select name="year" id="year">
+	    <option value="2015">2015</option>
+	    <option value="2014">2014</option>
+	    <option value="2013">2013</option>
+	    <option value="2012">2012</option>
+	    <option value="2011">2011</option>
+	    <option value="2010">2010</option>
+	  </select>
+	</fieldset>
+
+	
+	<div>
+		<label>
+			I agree to the terms and conditions:
+			<input type="checkbox" name="terms" required>
+		</label>
+	</div>
+
+	<button>Submit</button>
+
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+h1{
+	color: #f4429b;
+/*	border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+
+	border: 5px dashed rgb(255,00,00);
+}
+
+/*width
+style
+color */
+
+
+
+li{
+	color: rgb(62, 00, 00);
+}
+h4{
+	background: rgb(255,00,00);
+}
+
+body{
+	background: pink;
+/*	background: url(http://n.sinaimg.cn/ent/4_img/upload/1f0ce517/20170822/kx6h-fykcypq3205823.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}

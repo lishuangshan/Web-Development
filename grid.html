@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+		.pink {
+			background: pink;
+			border: 1px dashed purple;
+		}
+
+		.brown {
+			background: lightgreen;
+			border: 1px solid yellow;
+		}
+
+		.orange {
+			background: grey;
+			border: 1px solid red;
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+
+<!-- 	      OBJECTIVES
+	1. Understand purposes of Grid System
+	2. Understand the four different sizes
+	3. Write Nested Grids -->
+
+<!-- anytime you use a grid system, it must be in a "container".-->
+<div class="container">
+	<div class="row"> 
+		<!-- you should always remember that each row inside a container has 12 parts and you can group them. Below are two chunks, each occupies 6 parts  -->
+<!-- 		<div class="col-md-1 pink" >COL LG 2</div>
+		<div class="col-md-1 pink" >COL LG 2</div>
+		<div class="col-md-1 pink" >COL LG 2</div>
+		<div class="col-md-1 pink" >COL LG 2</div>
+		<div class="col-md-1 pink" >COL LG 2</div>
+		<div class="col-md-1 pink" >COL LG 2</div>
+		<div class="col-md-1 pink" >COL LG 2</div>
+		<div class="col-md-1 pink" >COL LG 2</div>
+		<div class="col-md-1 pink" >COL LG 2</div>
+		<div class="col-md-1 pink" >COL LG 2</div>
+		<div class="col-md-1 pink" >COL LG 2</div>
+		<div class="col-md-1 pink" >COL LG 2</div>
+	</div> -->
+	<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-6 brown">
+			<div class="row pink"> <!-- nested grid -->
+				<div class="col-lg-6 orange">HALF</div>
+				<div class="col-lg-6 orange">HALF</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 brown">TOUR DATE</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 brown">TOUR DATE</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 brown">
+			<div class="row">
+				<div class="col-lg-2 orange"></div>
+				<div class="col-lg-2 orange"></div>
+				<div class="col-lg-2 orange"></div>
+				<div class="col-lg-2 orange"></div>
+				<div class="col-lg-2 orange"></div>
+				<div class="col-lg-2 orange"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

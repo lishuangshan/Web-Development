@@ -1,0 +1,22 @@
+body{
+	background: url(https://img.eservice-hk.net/upload/2016/01/02/061023_c28fde4b301245661917bae59eb18320.jpg);
+}
+
+li{
+	border: 2px dashed red;  
+	color: white;
+}
+
+h1{
+	color: white;
+}
+
+#special{
+	background: blue;
+}
+
+.completed{
+	text-decoration: line-through;
+}
+
+
